@@ -1,34 +1,22 @@
-let ship1 = document.querySelector('#jcr');
-let ship2 = document.querySelector('#es')
-let ship3 = document.querySelector('#jc')
-let ship4 = document.querySelector('#dis')
-let jcr = document.querySelector('.jcr-info');
-let es = document.querySelector('.es-info');
-let jc = document.querySelector('.jc-info');
-let dis = document.querySelector('.dis-info');
+let shipData = document.querySelector('.jcr');
+let positionButton = document.querySelector('.button')
 
 
-ship1.addEventListener('mouseenter', () => {
-    console.log("Rollovers")
-    jcr.classList.remove('hidden')
+//JCR data is currently always [0] but may need to filter it out if the others start tracking
+let displayShipData = async () =>{ 
+    const currentLocation = await getShipData()
+    let latitude = currentLocation[0].latest_position.latitude;
+    let longitude = currentLocation[0].latest_position.longitude;
+    shipData.innerHTML =
+`${latitude}, ${longitude}. You can see this on googlemaps <a href="http://www.google.com/maps/place/${latitude},${longitude}/@${latitude},${longitude},8z">here</a>`
+}
 
-})
+//Endpoint does not work on ship level so have to return all data for all ships
+let getShipData = async () => {
+    const config = {headers: {'Accept':'application/json','Content-Type': 'application/json'}}
+    let result = await axios.get("http://api.bas.ac.uk/marine/v1/vessels/position/", config)
+    return result.data.data
+}
 
+positionButton.addEventListener('click', displayShipData)
 
-ship2.addEventListener('mouseenter', () => {
-    console.log("Rollovers")
-    es.classList.remove('hidden')
-
-})
-
-ship3.addEventListener('mouseenter', () => {
-    console.log("Rollovers")
-    jc.classList.remove('hidden')
-
-})
-
-ship4.addEventListener('mouseenter', () => {
-    console.log("Rollovers")
-    dis.classList.remove('hidden')
-
-})

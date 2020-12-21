@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -12,47 +13,12 @@
     <header>
         <h1>BAS vessel tracker</h1>
     </header>
-    <nav></nav>
 
-    <main class="grid-container">
-        <div class="ship-name" id="jcr">
-            <span>RRS James Clark Ross</span>
-        </div>
-        <div class="ship-data hidden jcr-info">
-            <p>ship information to be displayed on roll-over
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel facilis ipsa unde possimus, voluptatum similique tempora tempore ea neque nostrum. Nam ad ipsam, laudantium tempora at amet consequatur harum.
-                
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dignissimos hic voluptas accusamus facere eum doloremque necessitatibus ad dolor officia sit veritatis, soluta error incidunt ipsam, culpa asperiores sapiente ut.
+<p>Currently the British Antartic Survey API only has valid location coordiantes for 1 vessel.</p>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque quis commodi voluptates earum, totam eum magnam eius laborum quibusdam quaerat veritatis voluptate sed, alias tempora sint mollitia voluptatum minus.
-                Quibusdam, odit sequi nisi exercitationem voluptatum odio voluptatem accusantium architecto eaque, ducimus quae recusandae itaque quod sed quisquam distinctio, excepturi iusto? Quo eum sunt omnis quia asperiores ut laudantium voluptatibus?
-                Iure earum quod maiores dolores veniam, quo placeat officiis nihil laborum perferendis inventore reprehenderit. Sunt, soluta assumenda? Cumque 
-            </p>
-        </div>
-
-        <div class="ship-name" id="es">
-            <span>RRS Ernest Shackleton</span>
-        </div>
-        <div class="ship-data hidden es-info">
-            <p>ship information to be displayed on roll-over</p>
-        </div>
-
-        <div class="ship-name" id="jc">
-            <span>"RRS James Cook</span>
-        </div>
-        <div class="ship-data hidden jc-info">
-            <p>ship information to be displayed on roll-over</p>
-        </div>
-
-        <div class="ship-name" id="dis">
-            <span>"RRS Discovery"</span>
-        </div>
-        <div class="ship-data hidden dis-info">
-            <p>ship information to be displayed on roll-over</p>
-        </div>
-
-    </main>
-
+    <h2>JCR</h2>
+    <button class="button">Get latest Position</button>
+    <div class="jcr hidden"></div>
 
     <footer></footer>
     <script src="scripts/app.js"></script>
