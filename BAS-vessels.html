@@ -4,24 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <h1>BAS vessel tracker</h1>
-    </header>
+    <div class="grid-container grid-container-border">
+        <h1 class="grid-header1 typewriter-text">BAS VESSEL TRACKER</h1>
+        <!-- <h3 class="grid-header2 fadeIn-text">Select a ship to start</h3> -->
+        
+        <div class="border1"></div>
 
-<p>Currently the British Antartic Survey API only has valid location coordiantes for 1 vessel.</p>
+        <h2 class="grid-ship1 ship">
+        <img class="image" src="jcr_icon.png" alt="">
+        RRS James Clark Ross
+         </h2>
 
-    <h2>JCR</h2>
-    <button class="button">Get latest Position</button>
-    <div class="jcr hidden"></div>
 
+        <h2 class="grid-ship2 ship">
+            <img class="image" src="da_icon.png" alt="">
+            RRS Discovery
+        </h2>
+
+        <h2 class="grid-ship3 ship">
+            <img class="image" src="james_cook_icon.png" alt="">
+            RRS James Cook
+        </h2>
+
+        <h2 class="grid-ship4 ship">
+            <img class="image" src="discovery_icon.png" alt="">
+            RRS Sir David Attenborough
+        </h2>
+
+        <!-- <p>Currently the British Antartic Survey API only has valid location coordiantes for 1 vessel.</p> -->
+
+      <div class="jcr">
+        </div>
+
+    </div>
     <footer></footer>
     <script src="scripts/app.js"></script>
 </body>
 
 </html>
+
+
+<!-- <iframe width="65%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=-62.20989,-57.0265&amp;q=-62.20989,-57.0265&amp;ie=UTF8&amp;t=&amp;z=5&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe> -->

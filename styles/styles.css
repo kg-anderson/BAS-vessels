@@ -1,0 +1,129 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-container-border {
+    border: solid 10px lightblue;
+
+}
+
+.grid-header1 {
+    font-size: 4em;
+    grid-column: 2;
+    grid-row: 2;
+    color: purple;
+    text-align: center;
+    align-self: center;
+
+}
+
+.grid-ship1 {
+    grid-column: 2;
+    grid-row: 1;
+    padding-bottom: 20px;
+}
+
+
+.grid-ship2 {
+    grid-column: 1;
+    grid-row: 2;
+    white-space: nowrap;
+    width: 9em;
+
+}
+
+
+.grid-ship3 {
+    grid-column: 3;
+    grid-row: 2;
+    white-space: nowrap;
+    width: 9em;
+}
+
+.grid-ship4 {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.grid-ship4 > img {
+    padding: 25px;
+}
+
+.ship {
+    align-items: center;
+    color: rgb(0, 191, 255);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s ease 4s 1 normal both;
+}
+
+.ship:hover {
+    color: lightblue
+}
+
+
+.typewriter-text {
+    overflow: hidden;
+    position: relative;
+    width: 9.5em;
+    white-space: nowrap;
+    animation: typewriter 4s steps(64) 1s 1 normal both;
+}
+
+.fadeIn-text {
+    overflow: hidden;
+    position: relative;
+    width: 9.5em;
+    white-space: nowrap;
+    justify-items: center;
+    animation: fadeIn 4s ease 4s 1 normal both;
+}
+
+.map {
+    grid-column: 2;
+    grid-row: 2;
+    width: 85%;
+    height: 50%;
+
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 9.5em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
