@@ -12,37 +12,39 @@
 </head>
 
 <body>
-    <div class="grid-container grid-container-border">
-        <h1 class="grid-header1 typewriter-text">BAS VESSEL TRACKER</h1>
-        <!-- <h3 class="grid-header2 fadeIn-text">Select a ship to start</h3> -->
-        
-        <div class="border1"></div>
-
-        <h2 class="grid-ship1 ship">
-        <img class="image" src="jcr_icon.png" alt="">
-        RRS James Clark Ross
-         </h2>
-
-
-        <h2 class="grid-ship2 ship">
-            <img class="image" src="da_icon.png" alt="">
-            RRS Discovery
-        </h2>
-
-        <h2 class="grid-ship3 ship">
-            <img class="image" src="james_cook_icon.png" alt="">
-            RRS James Cook
-        </h2>
-
-        <h2 class="grid-ship4 ship">
-            <img class="image" src="discovery_icon.png" alt="">
-            RRS Sir David Attenborough
-        </h2>
-
-        <!-- <p>Currently the British Antartic Survey API only has valid location coordiantes for 1 vessel.</p> -->
-
-      <div class="jcr">
+    <div class="container grid-container-border">
+        <div class="map">
+            <!-- map insert -->
         </div>
+        <h1 class="grid-header1 typewriter-text" id="heading">BAS VESSEL TRACKER</h1>
+        <p class="hidden update-text">*Position not currently updated by BAS API</p>
+
+
+        <div class="grid-ship1 ship">
+            <img class="image" src="jcr_icon.png" alt="">
+            <h2>RRS James Clark Ross</h2>
+            <button class="btn hidden">Display position</button>
+        </div>
+
+        <div class="grid-ship2 ship">
+            <img class="image" src="da_icon.png" alt="">
+            <h2>RRS Discovery</h2>
+            <button class="btn hidden">Display position</button>
+        </div>
+
+        <div class="grid-ship3 ship">
+            <img class="image" src="james_cook_icon.png" alt="">
+            <h2>RRS James Cook</h2>
+            <button class="btn hidden">Display position</button>
+        </div>
+
+        <div class="grid-ship4 ship">
+            <img class="image" src="jcr_icon.png" alt="">
+            <h2>RRS Sir David Attenborough</h2>
+            <button class="btn hidden">Not avaliable</button>
+        </div>
+
+
 
     </div>
     <footer></footer>
