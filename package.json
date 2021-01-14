@@ -1,0 +1,24 @@
+{
+  "name": "bas-vessels",
+  "version": "1.0.0",
+  "description": "Tracking the movements of BAS research vessels at sea",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kg-anderson/BAS-vessels.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kg-anderson/BAS-vessels/issues"
+  },
+  "homepage": "https://github.com/kg-anderson/BAS-vessels#readme"
+}
